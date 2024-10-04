@@ -15,7 +15,7 @@ Create a new Unreal Engine project and build a small Blueprint-based game. This 
 
 ## 3. Convert Blueprints to C++: 
 
-Identify a Blueprint function or feature you’d like to implement in C++. Attempt to convert it to a C++ function, using Unreal Engine’s C++ class and macro structure.
+Identify a Blueprint function or feature you’d like to implement in C++. Attempt to =convert= it to a C++ function, using Unreal Engine’s C++ class and macro structure.
 
 ## 4. Use online resources: 
 
