@@ -33,10 +33,17 @@ Unreal Engine provides a mechanism for defining interface classes using the IInt
 
 ## Best Practices
 
-### 1. Use meaningful class names: Choose class names that accurately reflect the class’s purpose and functionality.
-### 2. Keep inheritance shallow: Avoid deep inheritance hierarchies, as they can lead to complexity and maintenance issues.
-### 3. Use interfaces for polymorphism: Instead of using multiple inheritance, consider using interfaces to define polymorphic behavior.
-### 4. Document your code: Use comments and documentation to explain the purpose and behavior of your classes and functions.
+### 1. Use meaningful class names: 
+Choose class names that accurately reflect the class’s purpose and functionality.
+
+### 2. Keep inheritance shallow: 
+Avoid deep inheritance hierarchies, as they can lead to complexity and maintenance issues.
+
+### 3. Use interfaces for polymorphism: 
+Instead of using multiple inheritance, consider using interfaces to define polymorphic behavior.
+
+### 4. Document your code: 
+Use comments and documentation to explain the purpose and behavior of your classes and functions.
 
 ## Unreal Engine-Specific Considerations
 
