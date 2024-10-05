@@ -1,49 +1,32 @@
-# Install Unreal Engine on Ubuntu
+# Install Unreal Engine 5 on Ubuntu
+To install Unreal Engine 5 on Ubuntu, follow these steps:
 
-Based on the provided search results, here’s a step-by-step guide on how to install Unreal Engine 4 on Ubuntu:
+## 1. Download the Unreal Engine 5 installer:
+- Go to the Unreal Engine website (www.unrealengine.com) and sign in with your Epic Games account.
+- Click on the “Downloads” tab and select “Linux” as the platform.
+- Choose the desired version (e.g., UE 5.0.3) and click on the “Download” button.
+- The installer will be downloaded as a .zip file.
 
-## Prerequisites
+## 2. Extract the installer:
+- Right-click on the downloaded .zip file and select “Extract Here” or use a file archiver like 7-Zip to extract the contents.
+- This will create a new folder containing the Unreal Engine 5 installer.
 
-1. Ubuntu 20.04 LTS (Focal Fossa) or later
-2. A compatible NVIDIA or AMD graphics card with binary drivers installed
-3. Clang 3.3 or later (for building Unreal Engine)
-4. Git installed (for cloning the Unreal Engine source code)
-5. A user account with sufficient privileges (not the root user)
+## 3. Run the installer:
+- Open a terminal and navigate to the extracted folder.
+- Run the installer by executing the UnrealEngine-Setup.sh script (for Ubuntu 22.04) or UnrealEngine-Setup (for older Ubuntu versions).
+- Follow the on-screen instructions to accept the EULA and choose the installation location.
 
-## Step 1: Install Build Essentials
+## 4. Configure the installer:
+- If you encounter issues with the installer using its own DotNet3, you may need to set UE_USE_SYSTEM_DOTNET=1 as an environment variable before running the installer.
+- Additionally, you may need to edit the SetupDotnet.sh script to use the system DotNet6 instead of its own DotNet3 (as mentioned in one of the search results).
 
-1. Open a Terminal and run the command: sudo apt-get install build-essential
-2. This will install the necessary packages for building C++ applications, including g++, make, and development libraries.
+## 5. Launch Unreal Engine 5:
+- After installation, navigate to the Engine/Binaries/Linux folder and run the UnrealEditor executable.
+- This will launch the Unreal Engine 5 editor.
 
-## Step 2: Install Clang
+Note: As mentioned in one of the search results, Unreal Engine 5’s main supported Linux distribution is Ubuntu 22.04, although it may run on other distributions like Fedora 36 as well.
 
-1. For Ubuntu 14.04, use Clang 3.5 or Clang 3.3 (do not use Clang 3.4). You can download precompiled binaries from gaming.jhu.edu.
-2. For Ubuntu 20.04 and later, Clang 3.3 or later is already available in the repository.
+Troubleshooting: * If you encounter issues during installation or runtime, refer to the Unreal Engine documentation or community forums for troubleshooting guidance. * Make sure to check the system requirements for Unreal Engine 5 and ensure your Ubuntu system meets the minimum requirements.
 
-## Step 3: Clone Unreal Engine Source Code
+By following these steps, you should be able to successfully install Unreal Engine 5 on your Ubuntu system.
 
-1. Create a new directory for Unreal Engine and navigate to it in the Terminal.
-2. Run the command: git clone https://github.com/EpicGames/UnrealEngine.git
-3. This will clone the Unreal Engine source code repository.
-
-## Step 4: Configure Unreal Engine
-
-1. Navigate to the UnrealEngine/Engine directory.
-2. Edit the Setup.sh script to specify the system DotNet version (if needed).
-3. Run the script: ./Setup.sh
-
-## Step 5: Build Unreal Engine
-1. Run the command: ./Build.sh
-2. This will start the build process, which may take several hours depending on your system specifications.
-
-## Step 6: Install Unreal Engine
-
-Once the build is complete, navigate to the UnrealEngine/Engine/Binaries/Linux directory.
-Run the Unreal Engine executable: ./UE4Editor
-
-## Additional Tips
-
-Make sure to disable Secure Boot if you’re using a UEFI-based system.
-If you encounter issues during the build process, refer to the Unreal Engine documentation or online forums for troubleshooting guidance.
-For Unreal Engine 5, follow the instructions in the “How to Setup and Run Unreal Engine 5 on Ubuntu 22.04” tutorial.
-Remember to follow the official Unreal Engine documentation and Epic Games’ guidelines for installing and setting up the engine on Linux.
