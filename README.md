@@ -1,32 +1,29 @@
-# Install Unreal Engine 5 on Ubuntu
-To install Unreal Engine 5 on Ubuntu, follow these steps:
+# Install UE 5.4.4 on Ubuntu 24.04
 
-## 1. Download the Unreal Engine 5 installer:
-- Go to the Unreal Engine website (www.unrealengine.com) and sign in with your Epic Games account.
-- Click on the “Downloads” tab and select “Linux” as the platform.
-- Choose the desired version (e.g., UE 5.0.3) and click on the “Download” button.
-- The installer will be downloaded as a .zip file.
+Here’s a step-by-step guide to install Unreal Engine 5.4.4 on Ubuntu 24.04:
 
-## 2. Extract the installer:
-- Right-click on the downloaded .zip file and select “Extract Here” or use a file archiver like 7-Zip to extract the contents.
-- This will create a new folder containing the Unreal Engine 5 installer.
+## 1. Download Unreal Engine 5.4.4:
+- Visit the official Unreal Engine website (www.unrealengine.com) and click on the “Download Unreal Engine” button.
+- Select the “Linux” option and choose the “Ubuntu 22.04” package (as Unreal Engine 5.4.4 is compatible with Ubuntu 22.04 and later).
+- Download the .zip file containing the Unreal Engine 5.4.4 installation package.
+
+## 2. Extract the installation package:
+- Extract the downloaded .zip file to a directory of your choice (e.g., ~/UnrealEngine).
 
 ## 3. Run the installer:
-- Open a terminal and navigate to the extracted folder.
-- Run the installer by executing the UnrealEngine-Setup.sh script (for Ubuntu 22.04) or UnrealEngine-Setup (for older Ubuntu versions).
-- Follow the on-screen instructions to accept the EULA and choose the installation location.
+- Navigate to the extracted directory and run the SetupUE.sh script (or SetupUE.bat on Windows) as a terminal command.
+- Follow the installer prompts to select the installation components and directory.
 
-## 4. Configure the installer:
-- If you encounter issues with the installer using its own DotNet3, you may need to set UE_USE_SYSTEM_DOTNET=1 as an environment variable before running the installer.
-- Additionally, you may need to edit the SetupDotnet.sh script to use the system DotNet6 instead of its own DotNet3 (as mentioned in one of the search results).
+## 4. Configure the installation:
+- Set UE_USE_SYSTEM_DOTNET=1 as an environment variable to use the system-installed .NET 6 instead of the bundled .NET 3.
+- Edit the SetupDotnet.sh script to read the host .NET version correctly (as described in one of the search results).
 
-## 5. Launch Unreal Engine 5:
-- After installation, navigate to the Engine/Binaries/Linux folder and run the UnrealEditor executable.
-- This will launch the Unreal Engine 5 editor.
+## 5. Launch Unreal Engine:
+- Run the UnrealEditor executable from the Engine/Binaries/Linux directory.
+- You can also use the Epic Asset Manager to download and manage your projects and assets.
 
-Note: As mentioned in one of the search results, Unreal Engine 5’s main supported Linux distribution is Ubuntu 22.04, although it may run on other distributions like Fedora 36 as well.
+### Additional Notes:
 
-Troubleshooting: * If you encounter issues during installation or runtime, refer to the Unreal Engine documentation or community forums for troubleshooting guidance. * Make sure to check the system requirements for Unreal Engine 5 and ensure your Ubuntu system meets the minimum requirements.
-
-By following these steps, you should be able to successfully install Unreal Engine 5 on your Ubuntu system.
-
+Make sure your system meets the minimum and recommended hardware specifications for Unreal Engine 5.4.4, as listed on the official Unreal Engine website.
+If you encounter any issues during installation, refer to the Unreal Engine documentation or seek help from the Epic Games community forums.
+By following these steps, you should be able to successfully install Unreal Engine 5.4.4 on your Ubuntu 24.04 system.
