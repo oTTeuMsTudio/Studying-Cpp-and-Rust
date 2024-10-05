@@ -50,6 +50,23 @@ If you’re struggling to write C++ code or understand specific UE macros, use C
 
 
 
+# This section was written in conjunction with ChatGPT.
+Highly recommend taking a short class of native C++. Here is a video link to ~1h long video tutorial from Mosh.
 
+You can also watch a playlist from GGameDev about getting started with Unreal Engine C++.
+
+C++ is a statically typed, compiled, general-purpose programming language that offers a combination of high-level and low-level features. It was developed by Bjarne Stroustrup at Bell Labs in 1979 as an enhancement to the C language, originally named C1 with Classes and later renamed C++ in 1983.
+
+You can read more about C++ Language Reference from Microsoft Learn.
+
+Using C++ with Unreal Engine unlocks the engine's full feature set, allowing developers to harness advanced graphics rendering, physics simulations, networking, and AI capabilities. C++ provides a level of control, customization, and performance optimization that complements visual scripting.
+
+Developing with C++ in Unreal Engine enables better debugging, profiling, and performance optimization through techniques such as multithreading and memory management. It also facilitates integration with third-party libraries, expanding the range of functionality and flexibility available to developers.
+
+You can read more about it on their docs.
+
+To use C++ effectively in Unreal Engine, it is crucial to have a strong foundation in programming principles and understanding of Unreal Engine's architecture and conventions. Leveraging resources like the Unreal Engine documentation, community forums, and collaboration with other developers helps to gain knowledge and best practices.
+
+By combining the power of C++ and Unreal Engine, developers can create immersive experiences and unlock the full potential of the engine's capabilities.
 
 
