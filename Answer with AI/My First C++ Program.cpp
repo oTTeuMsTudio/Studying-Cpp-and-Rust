@@ -1,8 +1,8 @@
 #include <iostream>
 
 int main() {
-    int file_size;
-    file_size = 100;
+    int file_size = 100;
+    double sales = 9.99;
     std::cout << "Hello, World!";
     return 0;
 }
