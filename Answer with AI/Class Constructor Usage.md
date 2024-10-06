@@ -13,7 +13,7 @@ When inheriting from UObject, you may need to define constructors with parameter
 ## Example
 
 Here’s an example of a UE5 class constructor:
-```
+```C
 UCLASS()
 class xxx_API UHSpatialHash final : public UObject
 {
@@ -21,7 +21,8 @@ class xxx_API UHSpatialHash final : public UObject
 
 public:
     explicit UHSpatialHash(const float PCellSize) { CellSize = PCellSize; }
-};```
+};
+```
 
 In this example, the UHSpatialHash class has a constructor that takes a const float parameter PCellSize and initializes the CellSize property.
 
