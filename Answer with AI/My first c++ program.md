@@ -16,12 +16,14 @@ Familiarize yourself with C++ syntax and basic concepts.
 2. Save the file with a .cpp extension, for example, myfirstprogram.cpp.
 3. Write the following code:
 
+```c++
 #include <iostream>
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
     return 0;
 }
+```
 
 ## Code Explanation
 
