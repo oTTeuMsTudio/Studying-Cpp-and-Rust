@@ -26,7 +26,7 @@ void AMyActor::BeginPlay()
 
 ### Important notes:
 
-- Make sure to include the Super::BeginPlay() call to ensure that the parent’s implementation is executed.
+- Make sure to include the `Super::BeginPlay()` call to ensure that the parent’s implementation is executed.
 - If you want to prevent the parent’s BeginPlay() from being called, you can remove the Super::BeginPlay() line. However, this is generally not recommended, as it may break functionality or cause unexpected behavior.
 - In Blueprints, you cannot directly override the BeginPlay() function. Instead, create a custom event or function and call it from the BeginPlay() implementation in your C++ class.
 By following these steps, you can effectively override the BeginPlay() function in your UE5 C++ class and customize the initialization behavior for your actors.
