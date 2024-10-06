@@ -24,7 +24,7 @@ public:
 };
 ```
 
-In this example, the UHSpatialHash class has a constructor that takes a const float parameter PCellSize and initializes the CellSize property.
+In this example, the `UHSpatialHash` class has a constructor that takes a const float parameter PCellSize and initializes the CellSize property.
 
 ## Best Practices
 
