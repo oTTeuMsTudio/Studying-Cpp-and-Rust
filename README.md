@@ -107,3 +107,8 @@ The CDO defines the default values for properties and the default behavior of th
 In terms of code, the CDO is typically created using the UCLASS macro, which specifies the class’s Unreal Engine metadata and generates the CDO. The GENERATED_BODY macro is also used to set up the class’s infrastructure, ensuring that the CDO is properly initialized and maintained.
 
 In summary, the Class Default Object (CDO) is a crucial component of Unreal Engine’s object model, providing a template for default values and behavior that is used to initialize subsequent instances of a UClass.
+
+
+===============================================
+
+
