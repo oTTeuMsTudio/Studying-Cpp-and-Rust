@@ -1,6 +1,6 @@
 # Override Begin Destroy Function UE5
 
-In Unreal Engine 5 (UE5), BeginDestroy() is a protected virtual function in the UObject class. It is called before an object is destroyed, allowing derived classes to perform any necessary cleanup or destruction logic.
+In Unreal Engine 5 (UE5), `BeginDestroy()` is a protected virtual function in the UObject class. It is called before an object is destroyed, allowing derived classes to perform any necessary cleanup or destruction logic.
 
 To override BeginDestroy() in UE5, follow these steps:
 
