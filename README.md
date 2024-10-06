@@ -30,7 +30,7 @@ By following these steps, you should be able to successfully install Unreal Engi
 
 
 
-
+========================================================================================
 
 # C++ Boosts Unreal Engine
 Unlocking Unreal Engine’s Potential: The Synergy of C++ and Unreal Engine By combining the robustness of C++ with the versatility of Unreal Engine, developers can create rich, immersive experiences that showcase the engine’s capabilities. C++ provides a powerful, performance-oriented language for building game logic, while Unreal Engine offers a comprehensive toolset for creating 3D graphics, physics, and audio.
@@ -63,3 +63,22 @@ C++ and Unreal Engine provide a versatile platform for indie developers to creat
 ## Conclusion
 
 By harnessing the strengths of C++ and Unreal Engine, developers can create immersive experiences that showcase the engine’s capabilities and push the boundaries of game development. Whether building AAA titles, simulation applications, or indie games, this powerful combination enables developers to unlock the full potential of Unreal Engine and create engaging, high-performance experiences.
+
+
+=====================================================
+
+
+
+# Unreal Classes are 'Managed'
+Unreal object instances are automatically cleanded up when you no longer hold onto any references to them. (A pointer)
+Marking your pointer with UPROPERTY() is what tells unreal to leave it alone. 
+
+# Unreal Object Auto-Cleanup Mechanism
+In Unreal Engine, classes are considered “managed” when they inherit from UObject. Managed objects are automatically cleaned up by the garbage collector when they are no longer referenced by any pointers. This means that as long as there are no active references to an object, Unreal Engine will eventually destroy it and reclaim its memory.
+
+However, there is an exception to this rule. If you mark a pointer to a managed object with UPROPERTY(), Unreal Engine will treat that pointer as a special case and not destroy the object, even if there are no other active references to it. This is because UPROPERTY() indicates that the object is being used as a property or member variable, and Unreal Engine assumes that it needs to preserve the object’s existence for serialization or other purposes.
+
+In other words, UPROPERTY() tells Unreal Engine to “leave the object alone” and not garbage-collect it, even if it’s no longer referenced by any other code. This can be useful in certain situations, such as when you need to preserve an object’s state across levels or saves, or when you’re working with assets that need to be loaded and unloaded dynamically.
+
+It’s worth noting that this behavior only applies to managed objects (i.e., objects that inherit from UObject). If you’re working with raw C++ objects or other types of data structures, you’ll need to manage their memory manually using standard C++ techniques, such as smart pointers or manual deletion.
+
