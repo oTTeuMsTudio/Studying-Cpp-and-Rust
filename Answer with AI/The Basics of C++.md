@@ -9,7 +9,7 @@
 ### 5. Working with the standard library
 ### 6. Comments
 
-# Small Exercise
+# Variables - Small Exercise
 Write code to swap the value of two variables (this is a common interview question).
 
 Declare 2 variables a and b.
@@ -45,4 +45,38 @@ int main(){
   return 0;
 }
 ```
- 
+# Constants - 
+Where we don`t want the value of a variable to change we use constants.
+
+```c++
+#include <iostream>
+
+int main(){
+  const double pi = 3.14;
+  pi = 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
