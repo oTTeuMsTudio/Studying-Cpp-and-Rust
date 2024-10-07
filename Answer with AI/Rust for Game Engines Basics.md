@@ -1,5 +1,4 @@
-# Rust for Game Engines
-Basics
+# Rust for Game Engines Basics
 Rust is a systems programming language gaining popularity in the game development community due to its focus on performance, reliability, and safety. Here are the basics for using Rust in game engines:
 
 ## Modules and Libraries
