@@ -27,3 +27,22 @@ int main(){
   return 0;
 }
 ```
+## Solution
+We declare a third variable and call it temp, then on the end the b is 1.
+
+```c++
+#include <iostream>
+using namespace std;
+
+int main(){
+  int a = 1;
+  int b = 2;
+  int temp = a;
+  a = b;
+  b = temp;
+  std::cout << a;
+
+  return 0;
+}
+```
+ 
