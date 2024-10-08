@@ -1,13 +1,36 @@
 # Masters C++
-## Intro/Getting Started
-## C++ Basics
-## C++ Basics: Functions and Files
-## Debugging C++ Programs
-## Fundamental Data Types
-## Constants and Strings
-## Operators
+## 0. Intro/Getting Started
+## 1. C++ Basics
+## 2. C++ Basics: Functions and Files
+## 3. Debugging C++ Programs
+## 4. Fundamental Data Types
+## 5. Constants and Strings
+## 6. Operators
 ## Bit Manipulation
-## Scope, Duration, and Linkage
+## 7. Scope, Duration, and Linkage
+## 8. Control Flow
+## 9. Error Detection and Handling
+## 10. Type Conversion, Type Aliases, and Type Deduction
+## 11. Function Overloading and function Templates
+## 12. Compound Types: References and Pointers
+## 13. Compound Types: Enums and Structs
+## 14. Introduction to Classes
+## 15. More on Classes
+## 16. Dynamic arrays: std::vector
+## 17. Fixed-size arrays: std::array and C-style arrays
+## 18. Iterators and Algorithms
+## 19. Dynamic Allocation
+## 20. Functions
+## 21. Operator Overloading
+## 22. Move Semantics and Smart Pointers
+## 23. Object Relationships
+## 24. Inheritance
+## 25. Virtual Functions
+## 26. Templates and Classes
+## 27. Exceptions
+## 28. Input and Output (I/O)
+## A. Miscellaneous Subjects
+## B. C++ Updates
 
 
 
