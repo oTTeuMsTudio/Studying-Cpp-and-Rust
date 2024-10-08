@@ -80,21 +80,52 @@ int main(){
 # Mathematical Expressions
 Now that we learned, how to declare variables and constants, let`s write expressions for performing calculations. This is where the fun begins.
 
+## Floating point number
+To get a floating point number, we have to convert one of these numbers to a double.
 ```c++
 #include <iostream>
 
 int main(){
   int x = 10;
   int y = 3;
-  int z = x + y;
+  double z = x / y;
   std::cout << z;
 
   return 0;
 }
+```
+## Modulus
+Returns the remainder of a division.
 
+```c++
+#include <iostream>
 
+int main(){
+  int x = 10;
+  int y = 3;
+  int z = x % y;
+  std::cout << z;
 
+  return 0;
+}
+```
+# Increment, Decrement
+```c++
+#include <iostream>
 
+int main(){
+  int x = 10;
+  int y = x++; // x = 11, y = 10
+  int z = ++x; // x = 11, z = 11
+  x++
+  ++x
+  x--
+  --x
+  std::cout << x;
+  return 0;
+}
+```
+# 
 
 
 
