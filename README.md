@@ -1,4 +1,4 @@
-# Masters C++
+# Master C++
 ## 0. Intro/Getting Started
 ## 1. C++ Basics
 ## 2. C++ Basics: Functions and Files
