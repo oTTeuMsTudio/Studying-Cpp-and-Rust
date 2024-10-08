@@ -75,7 +75,22 @@ int main(){
 
   return 0:
 }
+```
 
+# Mathematical Expressions
+Now that we learned, how to declare variables and constants, let`s write expressions for performing calculations. This is where the fun begins.
+
+```c++
+#include <iostream>
+
+int main(){
+  int x = 10;
+  int y = 3;
+  int z = x + y;
+  std::cout << z;
+
+  return 0;
+}
 
 
 
