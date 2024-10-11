@@ -174,20 +174,20 @@ Multi-line comments can span multiple lines and are used for more extensive comm
 ### Headers vs source files
 In C++, header files and source files are two types of files used to organize and manage code in a C++ program.
 
-Header Files (.h)
+#### Header Files (.h)
 - Header files contain declarations of classes, functions, variables, and other elements that are used in the program.
 - They provide interfaces to the functionality implemented in the corresponding source files.
 - Header files are included in source files using #include directives to make the declarations visible to the compiler during the compilation process.
 
-Source Files (.cpp)
+#### Source Files (.cpp)
 - Source files contain the actual implementations of the functions and classes declared in the header files.
 - They define how the functions and classes behave and provide the logic for the program's functionality.
 - Source files are compiled to object files and then linked together to create the final executable.
 
-Reason for Separate Header and Source Files
+#### Reason for Separate Header and Source Files
 The separation of header and source files is a design choice that promotes modularity and improves build efficiency in C++. By keeping declarations in header files and implementations in source files, the compiler can easily check for correctness and compile only the necessary code, reducing build times and preventing redundant compilation.
 
-History of Single File Extensions
+#### History of Single File Extensions
 
 In the early days of computing, languages like Fortran and COBOL used single file extensions because of the limitations of the operating systems and compilers at the time. Each file had to adhere to a specific format defined by the language and its compiler, and the extension represented that format.
 
@@ -217,34 +217,37 @@ In general, you use double quotes for your own header files (which may be part o
 > ### This section was written in conjunction with Leo, Brave`s build-in AI.
 C++ syntax refers to the rules that govern the structure of C++ programs, including:
 
-Indentation: C++ uses indentation to denote block-level structure, such as if-else statements, loops, and functions.
-Keywords: C++ has a set of reserved keywords, such as if, else, for, while, switch, case, etc., which have specific meanings.
-Identifiers: C++ uses identifiers (names) for variables, functions, and labels, which must start with a letter or underscore and can be followed by letters, digits, and underscores.
-Operators: C++ has various operators for arithmetic, comparison, logical, assignment, and other operations.
-Brackets: C++ uses parentheses () for function calls, and square brackets [] for array indexing.
-Semicolons: C++ uses semicolons ; to terminate statements.
-Structure in C++
+1. **Indentation**: C++ uses indentation to denote block-level structure, such as if-else statements, loops, and functions.
+2. **Keywords**: C++ has a set of reserved keywords, such as if, else, for, while, switch, case, etc., which have specific meanings.
+3. **Identifiers**: C++ uses identifiers (names) for variables, functions, and labels, which must start with a letter or underscore and can be followed by letters, digits, and underscores.
+4. **Operators**: C++ has various operators for arithmetic, comparison, logical, assignment, and other operations.
+5. **Brackets**: C++ uses parentheses () for function calls, and square brackets [] for array indexing.
+6. **Semicolons**: C++ uses semicolons ; to terminate statements.
+
+## Structure in C++
 
 C++ structure refers to the organization of code into logical units, including:
 
-Functions: C++ functions are self-contained blocks of code that perform specific tasks, returning values or modifying external state.
-Classes: C++ classes define user-defined data types, combining data members (variables) and member functions (methods).
-Structures: C++ structures (typedef’d as struct) are similar to classes, but without inheritance and with default public access.
-Enums: C++ enumerations (typedef’d as enum) define a set of named constants.
-Unions: C++ unions define a type that can hold values of different data types, occupying the same memory space.
-Arrays: C++ arrays store multiple values of the same data type, indexed by integers.
-Pointers: C++ pointers store memory addresses, allowing indirect access to variables.
-Best Practices
+1. **Functions**: C++ functions are self-contained blocks of code that perform specific tasks, returning values or modifying external state.
+2. **Classes**: C++ classes define user-defined data types, combining data members (variables) and member functions (methods).
+3. **Structures**: C++ structures (typedef’d as struct) are similar to classes, but without inheritance and with default public access.
+4. **Enums**: C++ enumerations (typedef’d as enum) define a set of named constants.
+5. **Unions**: C++ unions define a type that can hold values of different data types, occupying the same memory space.
+6. **Arrays**: C++ arrays store multiple values of the same data type, indexed by integers.
+7. **Pointers**: C++ pointers store memory addresses, allowing indirect access to variables.
 
-Consistent indentation: Use a consistent number of spaces for indentation throughout the code.
-Proper naming: Use meaningful and descriptive names for variables, functions, and classes.
-Code organization: Structure code into logical modules, functions, and classes.
-Commenting: Use comments to explain code intent, assumptions, and limitations.
-Error handling: Implement robust error handling mechanisms to detect and recover from errors.
-Example Code
+## Best Practices
+
+1. **Consistent indentation**: Use a consistent number of spaces for indentation throughout the code.
+2. **Proper naming**: Use meaningful and descriptive names for variables, functions, and classes.
+3. **Code organization**: Structure code into logical modules, functions, and classes.
+4. **Commenting**: Use comments to explain code intent, assumptions, and limitations.
+5. **Error handling**: Implement robust error handling mechanisms to detect and recover from errors.
+
+## Example Code
 
 Here’s a simple C++ program demonstrating syntax and structure:
-
+```c++
 #include <iostream>
 
 // Structure to represent a person
@@ -267,11 +270,12 @@ int main() {
 
     return 0;
 }
-
+```
 This code demonstrates:
 
-Structure declaration (struct Person)
-Function definition (void printPerson)
-Variable declaration and initialization (Person john)
-Function call (printPerson(john))
+- Structure declaration (struct Person)
+- Function definition (void printPerson)
+- Variable declaration and initialization (Person john)
+- Function call (printPerson(john))
+
 Note that this is a simplified example, and real-world C++ programs typically involve more complex structures, functions, and error handling mechanisms.
