@@ -96,7 +96,7 @@ GeeksforGeeks - Object-Oriented Programming in C++
 C++ documentation - Classes and Objects
 Remember to practice and experiment with different OOP concepts in C++ to solidify your understanding.
 
-# Syntax and Structure
+## Syntax and Structure
 
 > ### This section was written in conjunction with ChatGPT.
 
@@ -104,28 +104,32 @@ Syntax refers to the set of rules that define the structure, format and grammar 
 
 C++ follows a structured syntax that includes elements such as keywords1, identifiers, operators and control structures. The syntax is designed to provide precise instructions to the compiler on how to interpret and execute the code.
 
-Weak vs Strong typing
+### Weak vs Strong typing
 Weak and strong typing refer to different approaches in how programming languages handle data types and type safety.
 
 In C++, the language is considered strongly typed, as it requires explicit type conversions and does not perform implicit type coercion without the programmer's explicit instruction (except number data types). C++ enforces strong typing to ensure type safety and minimize potential errors.
 
 Weak Typing (Python2 code):
-
+```c++
 a = 5 # Compiled! Because Python is a weak typing language.
+```
 Strong Typing (C++ code):
-
+```c++
 a = 5; // Error!
 int a = 5; // Compiled!
-Semicolons in C++
+```
+### Semicolons in C++
 In C++, a semicolon (;) is used to mark the end of a statement. It serves as a delimiter, indicating to the compiler that one statement has finished and another begins. The presence of semicolons allows the compiler to separate statements and interpret code correctly.
 
 The requirement for semicolons in C++ is a design choice that provides explicit statement termination. This approach allows for more fine-grained control over program execution and eliminates ambiguity.
 
 In contrast, languages like Python2 use indentation to define blocks of code, eliminating the need for explicit statement termination with semicolons.
-
+```c++
 int a = 5; // Compiled!
 int b = 5 // Error! Semicolon missing.
-Curly Braces in C++
+```
+
+### Curly Braces in C++
 C++ uses curly braces ({}) as block delimiters to enclose multiple statements or define the body of control structures, functions, and classes. The use of curly braces provides a clear and explicit way to define the boundaries of code blocks (also know as a scope).
 
 Curly braces help define the scope of variables and maintain code readability. They ensure that statements within the braces are treated as a single unit, making it easier to understand the flow and logic of the program.
