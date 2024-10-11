@@ -133,7 +133,7 @@ int b = 5 // Error! Semicolon missing.
 C++ uses curly braces ({}) as block delimiters to enclose multiple statements or define the body of control structures, functions, and classes. The use of curly braces provides a clear and explicit way to define the boundaries of code blocks (also know as a scope).
 
 Curly braces help define the scope of variables and maintain code readability. They ensure that statements within the braces are treated as a single unit, making it easier to understand the flow and logic of the program.
-
+```c++
 class Car
 {
 
@@ -148,7 +148,7 @@ void MyFunction()
         // Scope inside a function
     }
 }
-
+```
 ### Comments in C++
 Both single-line and multi-line comments are helpful for adding explanatory notes, documenting code, or temporarily disabling sections of code during debugging or development. They enhance code readability, facilitate collaboration, and provide valuable information to developers maintaining the codebase.
 
