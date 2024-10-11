@@ -22,7 +22,6 @@ Polymorphism is often illustrated through inheritance, where you have a base cla
 
 > ### This section was written in conjunction with Leo, Brave`s build-in AI.
 
-# Object-Oriented Programming
 Object-Oriented Programming (OOP) is a programming paradigm that revolves around the concept of “objects” and their interactions. In C++, OOP is achieved through the use of classes, objects, inheritance, polymorphism, and encapsulation.
 
 Key Concepts:
