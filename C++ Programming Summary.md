@@ -148,39 +148,43 @@ void MyFunction()
         // Scope inside a function
     }
 }
-Comments in C++
+
+### Comments in C++
 Both single-line and multi-line comments are helpful for adding explanatory notes, documenting code, or temporarily disabling sections of code during debugging or development. They enhance code readability, facilitate collaboration, and provide valuable information to developers maintaining the codebase.
 
-Single-line comments
+#### Single-line comments
 Single-line comments start with two forward slashes // and continue until the end of the line.
 
 They are typically used for brief comments or explanations on a single line.
-
+```
 // This is a single-line comment in C++
-Multi-line comments
+```
+
+#### Multi-line comments
 Multi-line comments, also known as block comments, start with a forward slash (/) followed by an asterisk (*) and end with an asterisk (*) followed by a forward slash (/).
 
 Multi-line comments can span multiple lines and are used for more extensive comments or documentation.
-
+```
 /*
     This is a multi-line comment
     It can span multiple lines
 */
-Headers vs source files
+```
+
+### Headers vs source files
 In C++, header files and source files are two types of files used to organize and manage code in a C++ program.
 
 Header Files (.h)
+- Header files contain declarations of classes, functions, variables, and other elements that are used in the program.
+- They provide interfaces to the functionality implemented in the corresponding source files.
+- Header files are included in source files using #include directives to make the declarations visible to the compiler during the compilation process.
 
-Header files contain declarations of classes, functions, variables, and other elements that are used in the program.
-They provide interfaces to the functionality implemented in the corresponding source files.
-Header files are included in source files using #include directives to make the declarations visible to the compiler during the compilation process.
 Source Files (.cpp)
+- Source files contain the actual implementations of the functions and classes declared in the header files.
+- They define how the functions and classes behave and provide the logic for the program's functionality.
+- Source files are compiled to object files and then linked together to create the final executable.
 
-Source files contain the actual implementations of the functions and classes declared in the header files.
-They define how the functions and classes behave and provide the logic for the program's functionality.
-Source files are compiled to object files and then linked together to create the final executable.
 Reason for Separate Header and Source Files
-
 The separation of header and source files is a design choice that promotes modularity and improves build efficiency in C++. By keeping declarations in header files and implementations in source files, the compiler can easily check for correctness and compile only the necessary code, reducing build times and preventing redundant compilation.
 
 History of Single File Extensions
@@ -191,7 +195,7 @@ Other languages, like C#3, Java4, and Python2, continued to use single file exte
 
 In modern programming, the choice of using single file extensions or separate header and source files depends on the language's design philosophy and the needs of the development community. Both approaches have their strengths and weaknesses, and different languages adopt the one that best aligns with their goals and use cases.
 
-Includes
+#### Includes
 In C++, the include directive is used to bring external code (headers or libraries) into your source code. It allows you to access the declarations and definitions present in those files.
 
 The include directive is typically written as:
@@ -200,13 +204,13 @@ The include directive is typically written as:
 #include <filename.h>   // Using angular brackets for standard library headers
 Here's the difference between using double quotes and angular brackets:
 
-Double Quotes (`"filename.h"): When you use double quotes, the preprocessor searches for the header file in the current directory first. If it doesn't find the file there, it will look in the additional include directories specified in the project settings.
+1. **Double Quotes (`filename.h`**): When you use double quotes, the preprocessor searches for the header file in the current directory first. If it doesn't find the file there, it will look in the additional include directories specified in the project settings.
 
-Example: #include "MyHeader.h"
+Example: `#include "MyHeader.h"`
 
-Angular Brackets (<filename.h>): When you use angular brackets, the preprocessor only searches for the header file in the standard library directories specified for the compiler.
+2. **Angular Brackets (`<filename.h>`)**: When you use angular brackets, the preprocessor only searches for the header file in the standard library directories specified for the compiler.
 
-Example: #include <iostream>
+Example: `#include <iostream>`
 
 In general, you use double quotes for your own header files (which may be part of your project) and angular brackets for standard library headers (like iostream, vector, etc.) or headers from external libraries.
 
