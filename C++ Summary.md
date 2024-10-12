@@ -362,8 +362,9 @@ The C++ Standard Library is a fundamental part of the C++ programming language, 
 
 Table from Microsoft Learn about Data Type Ranges.
 
-Type Name	Bytes	Other Names	Range of Values
-int	4	signed	-2,147,483,648 to 2,147,483,647
+| Type Name | Bytes	| Other Names | Range of Values |
+| ------- | ---- | --------- | ------------- |
+| int | 4 signed | -2,147,483,648 to 2,147,483,647 |
 unsigned int	4	unsigned	0 to 4,294,967,295
 __int8	1	char	-128 to 127
 unsigned __int8	1	unsigned char	0 to 255
