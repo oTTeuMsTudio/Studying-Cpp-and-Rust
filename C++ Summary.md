@@ -364,12 +364,12 @@ Table from Microsoft Learn about Data Type Ranges.
 
 | Type Name | Bytes	| Other Names | Range of Values |
 | ------- | ---- | --------- | ------------- |
-| int | 4 signed | -2,147,483,648 to 2,147,483,647 |
-unsigned int	4	unsigned	0 to 4,294,967,295
-__int8	1	char	-128 to 127
-unsigned __int8	1	unsigned char	0 to 255
-__int16	2	short, short int, signed short int	-32,768 to 32,767
-unsigned __int16	2	unsigned short, unsigned short int	0 to 65,535
+| int | 4 | signed | -2,147,483,648 to 2,147,483,647 |
+| unsigned int | 4 | unsigned | 0 to 4,294,967,295 |
+| __int8	1	char	-128 to 127
+| unsigned __int8	1	unsigned char	0 to 255
+| __int16	2	short, short int, signed short int	-32,768 to 32,767
+| unsigned __int16	2	unsigned short, unsigned short int	0 to 65,535
 __int32	4	signed, signed int, int	-2,147,483,648 to 2,147,483,647
 unsigned __int32	4	unsigned, unsigned int	0 to 4,294,967,295
 __int64	8	long long, signed long long	-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
