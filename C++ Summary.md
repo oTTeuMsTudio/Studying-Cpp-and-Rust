@@ -347,8 +347,9 @@ The C++ Standard Library has undergone significant changes and improvements over
 The C++ Standard Library is a fundamental part of the C++ programming language, providing a wide range of reusable components and algorithms for common tasks. Its implementations vary, but the core features and evolution have been shaped by the C++ standards committee and the contributions of the developer community.
 
 # Data types
-| This section was written in conjunction with ChatGPT. |
- ----------------------------------------------------- 
+```
+This section was written in conjunction with ChatGPT.
+```
 Native Types
 
 bool - Represents a logical value, either true or false
