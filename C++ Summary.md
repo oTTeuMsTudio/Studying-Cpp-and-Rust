@@ -357,7 +357,7 @@ The C++ Standard Library is a fundamental part of the C++ programming language, 
 | - `int` - Represents a integer (whole number) 
 | - `float` - Represents a floating-point number, which is a real number with a fractional component 
 | - `double` - Represents a double-precision floating-point number, which has twice the precision of a float 
-
+| ----------------------------------------------------------------------------------------------------------- |
 
 Table from Microsoft Learn about Data Type Ranges.
 
