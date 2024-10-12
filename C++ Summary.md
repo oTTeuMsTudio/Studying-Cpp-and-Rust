@@ -441,11 +441,12 @@ unsigned long int // Same as unsigned 32-bit integer (unsigned int)
 > [!Note]
 > The default behavior for all integer types is signed.
 
-Here is a list of modifiers for integer data type:
+Here is a list of modifiers for **integer** data type:
 
-Declare	Size (bits)	Size (bytes)	Min Value	Max Value
-unsigned char	8	1	0	255
-unsigned short int	16	2	0	65,535
+| Declare	| Size (bits)	| Size (bytes)	| Min Value	| Max Value |
+| --- | --- | --- | --- | --- |
+| `unsigned char`	| 8 |	1 | 	0	| 255 |
+| ` unsigned short int` | 	16 | 	2	0	65,535
 unsigned int	32	4	0	4,294,967,295
 unsigned long long	64	8	0	18,446,744,073,709,551,615
 signed char	8	1	-128	127
