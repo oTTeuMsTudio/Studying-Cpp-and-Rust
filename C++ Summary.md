@@ -605,3 +605,48 @@ int Factorial(int n)
 }
 ```
 
+| This section was written in conjunction with Leo, Brave`s build-in AI. |
+| --- |
+
+In C++, a class or struct consists of its members, which are divided into two categories: **data members and member functions**.
+
+### Data Members
+- Also known as **attributes** or **data variables**
+- Are variables declared within a class or struct
+- Have access specifiers (public, private, protected) to control visibility and accessibility
+- Can be initialized using constructors or assignment operators
+- Can be accessed using dot notation (e.g., `obj.memberVariable`)
+
+### Member Functions
+- Also known as methods or member procedures
+- Are functions declared within a class or struct
+- Can be overloaded to accept different parameters
+- Can be called using dot notation (e.g., obj.memberFunction())
+- Can access and modify data members
+- Can be declared as:
+    - Non-static: tied to an instance of the class, using this pointer
+    - Static: shared by all instances of the class, without this pointer
+
+### Types of Member Functions
+
+1. **Constructors**: special member functions called during object creation
+2. **Destructors**: special member functions called during object destruction
+3. **Assignment operators**: special member functions for assigning values to objects
+4. **Overloaded operators**: member functions that implement custom operator behavior (e.g., `+`, `-`, `==`)
+5. **Normal member functions**: general-purpose functions that perform specific tasks
+
+### Accessing Members
+
+- Data members can be accessed using dot notation (e.g., `obj.memberVariable`)
+- Member functions can be called using dot notation (e.g., `obj.memberFunction()`)
+
+### Best Practices
+
+- Use access specifiers (public, private, protected) to control visibility and accessibility of members
+- Use constructors and assignment operators to initialize and assign values to data members
+- Use member functions to encapsulate logic and hide implementation details
+- Avoid using public data members whenever possible, instead use public member functions to provide controlled access
+
+By following these guidelines, you can effectively use members in C++ to create robust, maintainable, and efficient classes and structs.
+
+
