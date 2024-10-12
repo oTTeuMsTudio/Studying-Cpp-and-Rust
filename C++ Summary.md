@@ -350,9 +350,10 @@ The C++ Standard Library is a fundamental part of the C++ programming language, 
 
 | This section was written in conjunction with ChatGPT. |
 | --- |
-|   |
-| --- | 
+
+ 
 | Native Types |
+| --- |
 | - `bool` - Represents a logical value, either true or false 
 | - `char` - Represents a single character in the ASCII5 character set 
 | - `int` - Represents a integer (whole number) 
@@ -405,20 +406,26 @@ Here is a summary of the explicit data sizes:
 
 
 ### Char
+```c++
 char myChar = 'a';
-Booleans
+```
+### Booleans
+```c++
 bool isDead = true;
-Integers
+```
+### Integers
+```c++
 int health = 10;
-Modifiers
+```
+### Modifiers
+
 C++ allows the char, int, and double data types to have modifiers preceding them. A modifier is used to alter the meaning of the base type so that it more precisely fits the needs of various situations.
 
-List of modifiers
-
-signed
-unsigned
-long
-short
+| List of modifiers |
+- signed |
+- unsigned |
+- long |
+- short |
 
 The modifiers signed, unsigned, long and short can be applied to integer base types. In addition, signed and unsigned can be applied to char, and long can be applied to double.
 
