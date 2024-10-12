@@ -397,8 +397,7 @@ If its name begins with two underscores `(__)`, a data type is non-standard.
 > C++ lacks explicitness about data types size, leading to potential variation. For instance, the int type can manifest as either 16-bits or 32-bits, depending on the context.
 
 Here is a summary of the explicit data sizes:
-
-
+| --- |
 | - char, signed char and unsigned char are at least 8 bits |
 | - signed short, unsigned short, signed int and unsigned int are at least 16 bits |
 | - signed long and unsigned long are at least 32 bits |
@@ -422,11 +421,12 @@ int health = 10;
 C++ allows the char, int, and double data types to have modifiers preceding them. A modifier is used to alter the meaning of the base type so that it more precisely fits the needs of various situations.
 
 | List of modifiers |
+| --- |
 | - signed |
 | - unsigned |
 | - long |
 | - short |
-| --- |
+
 
 The modifiers signed, unsigned, long and short can be applied to integer base types. In addition, signed and unsigned can be applied to char, and long can be applied to double.
 
