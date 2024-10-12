@@ -649,4 +649,183 @@ In C++, a class or struct consists of its members, which are divided into two ca
 
 By following these guidelines, you can effectively use members in C++ to create robust, maintainable, and efficient classes and structs.
 
+## Classes
+
+| This section was written in conjunction with ChatGPT. |
+| --- |
+
+Classes are the building blocks of object-oriented programming (OOP). They are a blueprint for creating objects, which are instances of a class. A class defines the structure and behavior of objects by specifying the members it contains.
+
+A class can have variables (members) to store data and functions (methods) to perform actions. The variables defined within a class are often referred to as attributes, while the functions are referred to as methods.
+
+Objects created from a class can access and modify the class's members. They provide a way to create multiple instances that share the same structure and behavior defined by the class. Objects can be thought of as individual entities that represent real-world objects or abstract concepts.
+
+Classes allow for code reusability, encapsulation (hiding internal details), and the ability to model complex systems by organizing related data and behavior together.
+
+Here's an example:
+```c++
+class Person
+{
+public:
+    Person(std::string name, int age)
+        : name(name)
+        , age(age)
+    { }
+
+    void DisplayInfo()
+    {
+        // ...
+    }
+
+private:
+    std::string name;
+    int age;
+};
+```
+
+### Structs
+
+In C++, a struct is a user-defined data type that allows you to group multiple variables of different data types under a single name. It is similar to a class, but with some key differences.
+
+### Usage of `struct` in C++
+
+Structs are used to create lightweight data structures to hold related data elements.
+They are commonly used to represent simple data objects or records that do not require complex behavior or methods.
+
+**Difference between** `class` **and** `struct` In C++, the main difference between a `class` and a `struct` is the default access level. In a `class`, the default access level for its members is private, while in a `struct`, the default access level is public. This means that members of a `struct` are accessible outside the struct without the need for access specifiers.
+
+For example:
+```c++
+struct Vector3
+{
+    float x;
+    float y;
+    float z;
+
+    Vector3(float _x = 0.0f, float _y = 0.0f, float _z = 0.0f)
+        : x(_x)
+        , y(_y)
+        , z(_z)
+    { }
+};
+
+Vector3 v1(1.0f, 2.0f, 3.0f);
+Vector3 v2(4.0f, 5.0f, 6.0f);
+
+float dx = v1.x - v2.x;
+float dy = v1.y - v2.y;
+float dz = v1.z - v2.z;
+
+float dist = std::sqrt(dx * dx + dy * dy + dz * dz);
+```
+
+**Historical difference with C language** In C, there was no concept of classes, and `struct` was the primary way to define user-defined data types. In C++, the `struct` keyword was retained to maintain compatibility with C, but it gained additional features and behavior, such as the ability to have member functions and access specifiers.
+
+In modern C++, the distinction between `class` and `struct` has become more a matter of convention and coding style rather than a strict rule. Many developers prefer to use `struct` for simple data containers with public data members and class for more complex objects with private data members and member functions. However, you can use either class or struct based on your design preferences.
+
+| This section was written in conjunction with Leo, Brave`s build-in AI. |
+| --- |
+
+In C++, a class is a user-defined data type that encapsulates data and functions that operate on that data. A class is a blueprint or a template that defines the properties and behavior of an object. Classes are the foundation of object-oriented programming (OOP) in C++.
+
+### Key Components of a Class
+
+1. **Data Members**: These are the variables declared within the class, which represent the state of an object.
+2. **Member Functions**: These are the functions declared within the class, which define the behavior of an object.
+3. **Access Specifiers**: These determine the accessibility of data members and member functions, such as public, private, or protected.
+4. **Constructors**: These are special member functions that initialize objects when they are created.
+5. **Destructor**: This is a special member function that is called when an object is destroyed.
+
+### Declaring a Class
+
+A class is declared using the `class` keyword followed by the class name. The class body is enclosed in curly braces `{ }`, where you define the data members and member functions.
+
+Example:
+```c++
+class Person {
+    public:
+        int age;
+        string name;
+
+        void printInfo() {
+            cout << "Name: " << name << ", Age: " << age << endl;
+        }
+};
+```
+
+### Creating Objects
+
+To create an object from a class, you use the class name followed by the object name. You can create multiple objects from the same class.
+
+Example:
+```c++
+Person person1;
+Person person2;
+
+person1.age = 25;
+person1.name = "John";
+
+person2.age = 30;
+person2.name = "Jane";
+```
+
+### Accessing Members
+
+You can access data members and member functions using the dot operator (.).
+
+Example:
+```c++
+person1.printInfo(); // Output: Name: John, Age: 25
+```
+
+### Inheritance
+
+C++ supports inheritance, which allows a class to inherit properties and behavior from another class.
+
+Example:
+```c++
+class Employee : public Person {
+    public:
+        int employeeID;
+        void printEmployeeInfo() {
+            printInfo(); // Calls the printInfo() function from the Person class
+            cout << "Employee ID: " << employeeID << endl;
+        }
+};
+```
+
+### Polymorphism
+
+C++ supports polymorphism, which allows objects of different classes to be treated as objects of a common superclass.
+
+Example:
+```c++
+class Shape {
+    public:
+        virtual void draw() = 0; // Pure virtual function
+};
+
+class Circle : public Shape {
+    public:
+        void draw() {
+            cout << "Drawing a circle." << endl;
+        }
+};
+
+class Rectangle : public Shape {
+    public:
+        void draw() {
+            cout << "Drawing a rectangle." << endl;
+        }
+};
+
+// Create objects and call the draw() function
+Shape* shape1 = new Circle();
+shape1->draw(); // Output: Drawing a circle.
+
+Shape* shape2 = new Rectangle();
+shape2->draw(); // Output: Drawing a rectangle.
+```
+These are the basic concepts and features of classes in C++. With classes, you can create reusable and modular code, encapsulate data and behavior, and implement complex systems and algorithms.
+
 
