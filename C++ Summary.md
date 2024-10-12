@@ -446,9 +446,9 @@ Here is a list of modifiers for **integer** data type:
 | Declare	| Size (bits)	| Size (bytes)	| Min Value	| Max Value |
 | --- | --- | --- | --- | --- |
 | `unsigned char`	| 8 |	1 | 	0	| 255 |
-| ` unsigned short int` | 	16 | 	2	0	65,535
-unsigned int	32	4	0	4,294,967,295
-unsigned long long	64	8	0	18,446,744,073,709,551,615
+| `unsigned short int` | 	16 | 	2	| 0 |	65,535
+| `unsigned int` |	32 |	4 |	0 |	4,294,967,295
+| `unsigned long long`	64	8	0	18,446,744,073,709,551,615
 signed char	8	1	-128	127
 signed short int	16	2	-32,768	32,767
 signed int	32	4	-2,147,483,648	2,147,483,647
@@ -486,15 +486,15 @@ void: no value (e.g., void* ptr;)
 1. **Enumerated Types** (`enum`)
     - A user-defined type with a set of named values (e.g., enum Color { RED, GREEN, BLUE };)
 2. **Arrays**
-A collection of values of the same type (e.g., int arr[5];)
-Pointers
-A variable that holds the memory address of another variable (e.g., int* ptr;)
-Structures (struct)
-A composite data type that combines multiple variables (e.g., struct Person { int age; string name; };)
-Unions (union)
-A composite data type that allows storing different types of data in the same memory location (e.g., union Color { int red; float green; };)
-Class Types (class)
-A user-defined type that encapsulates data and functions (e.g., class Person { int age; string name; public: void print(); };)
+    - A collection of values of the same type (e.g., int arr[5];)
+3. **Pointers**
+    - A variable that holds the memory address of another variable (e.g., int* ptr;)
+4. **Structures** (`struct`)
+    - A composite data type that combines multiple variables (e.g., struct Person { int age; string name; };)
+4. **Unions** (`union`)
+    - A composite data type that allows storing different types of data in the same memory location (e.g., union Color { int red; float green; };)
+5. **Class Types** (`class`)
+    - A user-defined type that encapsulates data and functions (e.g., class Person { int age; string name; public: void print(); };)
 
 ## Macro Constants
 
@@ -514,3 +514,50 @@ Additional Resources
 cppreference.com - a comprehensive online reference for C++ syntax and standard library functions.
 C++ Standard - the official C++ standard document.
 I hope this helps! Let me know if you have any further questions.
+
+## Typedefs
+
+| This section was written in conjunction with ChatGPT. |
+| --- |
+
+In C++, the typedef keyword is used to create an **alias** or **alternative name** for existing data types. It provides a way to define a new name that can be used as a shorthand for the original type, improving code readability and maintainability.
+
+Here's an example:
+¸¸¸c++
+typedef int myInt; // Declare our alias for custom type
+
+myInt x = 5;  // Equivalent to: int x = 5;
+¸¸¸
+> [!Warning]
+> UHT6 doesn't support typedefs. Meaning, you can't expose to Blueprint.
+
+| This section was written in conjunction with Leo, Brave`s build-in AI. |
+| --- |
+
+**In C++, the `typedef` keyword is used to give a new name to an existing data type**. It allows you to create an alias for a type, making your code more readable and maintainable. This can be particularly useful when working with complex or lengthy type names, such as template instantiations or nested structs.
+
+Here are some key points about `typedef` in C++:
+
+1. **Alias creation**: `typedef` creates an alias for an existing type, allowing you to use a shorter and more meaningful name.
+2. **Type equivalence**: The new alias is equivalent to the original type; it doesn’t define a new type, but rather provides an alternative name.
+3. **Scope**: The scope of a `typedef` declaration is limited to the current translation unit (i.e., the current source file).
+4. **Usage**: You can use the new alias as a type specifier, just like the original type.
+
+Examples:
+
+- `typedef int NaturalNumber`; creates an alias `NaturalNumber` for the `int` type.
+- `typedef struct { int x; int y; } Point`; creates a struct alias `Point` for a struct with two `int` members.
+
+Best practices:
+
+- Use `typedef` sparingly, as excessive use can lead to confusion and decreased readability.
+- Choose meaningful and descriptive names for your aliases.
+- Avoid using `typedef` for types that are already well-known or have a clear, concise name (e.g., `int`, `char`, `std::string`).
+
+Common use cases for `typedef` include:
+
+- Simplifying complex type names
+- Creating domain-specific types (e.g., `NaturalNumber` for a type-safe integer)
+- Improving code readability and maintainability
+
+Overall, `typedef` is a useful tool in C++ for making your code more expressive and easier to understand.
