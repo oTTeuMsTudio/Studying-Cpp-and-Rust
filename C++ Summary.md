@@ -561,3 +561,47 @@ Common use cases for `typedef` include:
 - Improving code readability and maintainability
 
 Overall, `typedef` is a useful tool in C++ for making your code more expressive and easier to understand.
+
+## Members
+
+| This section was written in conjunction with ChatGPT. |
+| --- |
+
+Members are variables or functions that are part of a class or object. They define the properties and behaviors of the class.
+
+There are two main types of members: `variables` and `functions`.
+
+### Variables
+Members that store data. They can be of different types such as numbers, strings, booleans, or custom data types. Variables hold values that can be accessed and manipulated within the class or object.
+
+### Assignments
+There are abbreviations for frequently done kinds of assignments. Here are a few:
+
+| Abbreviation | 	Meaning | 	Note |
+| --- | --- | --- |
+| `n += k` | 	`n = n + k` |	
+| `n -= k` | 	`n = n - k` |	
+| `++n` | 	`n = n + 1` | 	Where the value of expression ++n is the value of n after the assignment
+| `n++` | 	`n = n + 1` | 	But the value of expression n++ is the value of n before the assignment
+| `--n` |	`n = n - 1` | 	Where the value of expression --n is the value of n after the assignment
+| `n--`	| n = n - 1 |	But the value of expression n-- is the value of n before the assignment
+
+### Functions
+Functions are blocks of code that perform a specific task or set of tasks. They encapsulate a series of instructions and can be called and executed from various parts of a program. Functions can accept input parameters (arguments) and can also return a value as a result.
+
+Functions can be defined outside of classes as standalone functions or can be defined within classes as member functions. Standalone functions are typically used for common tasks that are not specific to any particular class or object.
+
+Here's an example:
+```c++
+/// @brief Calculates the factorial of a number using recursion.
+/// @param n Number of times.
+/// @result A number.
+int Factorial(int n)
+{
+    if (n == 0 || n == 1)
+        return 1;
+    else
+        return n * Factorial(n - 1);
+}
+```
+
