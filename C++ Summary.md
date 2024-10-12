@@ -400,6 +400,7 @@ Here is a summary of the explicit data sizes:
 | - signed short, unsigned short, signed int and unsigned int are at least 16 bits |
 | - signed long and unsigned long are at least 32 bits |
 | - signed long long and unsigned long long are at least 64 bits | 
+| ------------------------ |
 
 ### Char
 char myChar = 'a';
