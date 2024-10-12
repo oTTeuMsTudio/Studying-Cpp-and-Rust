@@ -351,7 +351,8 @@ The C++ Standard Library is a fundamental part of the C++ programming language, 
 > ### This section was written in conjunction with ChatGPT.
 
 | Native Types |
-----------------
+| ------------ |
+
 - `bool` - Represents a logical value, either true or false
 - `char` - Represents a single character in the ASCII5 character set
 - `int` - Represents a integer (whole number)
