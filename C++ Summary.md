@@ -280,7 +280,7 @@ This code demonstrates:
 
 Note that this is a simplified example, and real-world C++ programs typically involve more complex structures, functions, and error handling mechanisms.
 
-## Standard Library
+# Standard Library
 This section was written in conjunction with ChatGPT.
 The standard library in C++ is a collection of pre-defined classes and functions that provide a wide range of functionality for common tasks. It is a part of the C++ Standard Template Library (STL) and is officially known as the C++ Standard Library. The library is designed to be platform-independent and provides a standardized set of features that are supported across different C++ compilers and environments.
 
@@ -291,7 +291,7 @@ To use the standard library in C++, you include the appropriate header files in 
 The name "std" comes from the fact that all the classes, functions, and other elements of the standard library are part of the std namespace. The namespace std is used to avoid naming conflicts with other libraries and user-defined code. By using the std:: prefix before any element from the standard library, you explicitly specify that you are referring to the elements in the std namespace.
 
 Here's a simple example of how to use the standard library in C++:
-```c+++
+```c++
 #include <iostream>
 #include <vector>
 #include <algorithm>
