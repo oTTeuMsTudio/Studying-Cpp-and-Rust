@@ -348,7 +348,7 @@ The C++ Standard Library is a fundamental part of the C++ programming language, 
 
 # Data types
 | This section was written in conjunction with ChatGPT. |
-| ----------------------------------------------------- |
+ ----------------------------------------------------- 
 Native Types
 
 bool - Represents a logical value, either true or false
