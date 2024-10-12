@@ -523,11 +523,11 @@ I hope this helps! Let me know if you have any further questions.
 In C++, the typedef keyword is used to create an **alias** or **alternative name** for existing data types. It provides a way to define a new name that can be used as a shorthand for the original type, improving code readability and maintainability.
 
 Here's an example:
-¸¸¸c++
+```c++
 typedef int myInt; // Declare our alias for custom type
 
 myInt x = 5;  // Equivalent to: int x = 5;
-¸¸¸
+```
 > [!Warning]
 > UHT6 doesn't support typedefs. Meaning, you can't expose to Blueprint.
 
