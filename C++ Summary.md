@@ -456,3 +456,61 @@ signed long long	64	8	-9,223,372,036,854,775,808	9,223,372,036,854,775,807
 Floating points (floats and doubles)
 float speedInMetersPerSecond = 5.5f; // C++ always uses 'f' or 'F' literal for defining a float variable.
 double speedInMetersPerSecond = 5.5; // C++ never uses a literal for defining a double variable.
+
+| This section was written in conjunction with Leo, Brave`s build-in AI. |
+| --- |
+
+C++ provides several built-in data types, which are categorized into two main groups: **Fundamental Types** and **Derived Types**.
+
+## Fundamental Types
+
+1. **Integer Types**
+    - `char`: 1 byte, signed or unsigned (e.g., char c;)
+    - `short`: 2 bytes, signed or unsigned (e.g., short s;)
+    - `int`: 4 bytes, signed or unsigned (e.g., int i;)
+    - `long`: 4 bytes or 8 bytes, signed or unsigned (e.g., long l;)
+    - `long long`: 8 bytes, signed or unsigned (e.g., long long ll;)
+2. **Floating-Point Types**
+    - `float`: 4 bytes (e.g., float f;)
+double: 8 bytes (e.g., double d;)
+long double: 12 bytes (e.g., long double ld;)
+Character Types
+wchar_t: wide character (e.g., wchar_t wc;)
+Boolean Type
+bool: true or false (e.g., bool b;)
+Void Type
+void: no value (e.g., void* ptr;)
+
+## Derived Types
+
+1. **Enumerated Types** (`enum`)
+    - A user-defined type with a set of named values (e.g., enum Color { RED, GREEN, BLUE };)
+2. **Arrays**
+A collection of values of the same type (e.g., int arr[5];)
+Pointers
+A variable that holds the memory address of another variable (e.g., int* ptr;)
+Structures (struct)
+A composite data type that combines multiple variables (e.g., struct Person { int age; string name; };)
+Unions (union)
+A composite data type that allows storing different types of data in the same memory location (e.g., union Color { int red; float green; };)
+Class Types (class)
+A user-defined type that encapsulates data and functions (e.g., class Person { int age; string name; public: void print(); };)
+
+## Macro Constants
+
+C++ provides several macro constants that define the minimum and maximum values for integer types, such as:
+
+- CHAR_MIN and CHAR_MAX for char
+- SHRT_MIN and SHRT_MAX for short
+- INT_MIN and INT_MAX for int
+- LONG_MIN and LONG_MAX for long
+- LLONG_MIN and LLONG_MAX for long long
+- UINT_MAX for unsigned integer types
+
+These constants are defined in the <climits> header and are useful for ensuring portability and consistency across different platforms.
+
+Additional Resources
+
+cppreference.com - a comprehensive online reference for C++ syntax and standard library functions.
+C++ Standard - the official C++ standard document.
+I hope this helps! Let me know if you have any further questions.
