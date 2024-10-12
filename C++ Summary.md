@@ -395,12 +395,12 @@ If its name begins with two underscores `(__)`, a data type is non-standard.
 > C++ lacks explicitness about data types size, leading to potential variation. For instance, the int type can manifest as either 16-bits or 32-bits, depending on the context.
 
 Here is a summary of the explicit data sizes:
-| |
-char, signed char and unsigned char are at least 8 bits
-signed short, unsigned short, signed int and unsigned int are at least 16 bits
-signed long and unsigned long are at least 32 bits
-signed long long and unsigned long long are at least 64 bits
-| ---------- |
+
+| - char, signed char and unsigned char are at least 8 bits |
+| - signed short, unsigned short, signed int and unsigned int are at least 16 bits |
+| - signed long and unsigned long are at least 32 bits |
+| - signed long long and unsigned long long are at least 64 bits | 
+
 ### Char
 char myChar = 'a';
 Booleans
