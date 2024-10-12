@@ -352,12 +352,11 @@ The C++ Standard Library is a fundamental part of the C++ programming language, 
 | ------------ |
 
 | Native Types |
-| ----------------------------------------------------------------------------------------------------------- |
-- `bool` - Represents a logical value, either true or false 
-- `char` - Represents a single character in the ASCII5 character set 
-- `int` - Represents a integer (whole number) 
-- `float` - Represents a floating-point number, which is a real number with a fractional component 
-- `double` - Represents a double-precision floating-point number, which has twice the precision of a float 
+| - `bool` - Represents a logical value, either true or false 
+| - `char` - Represents a single character in the ASCII5 character set 
+| - `int` - Represents a integer (whole number) 
+| - `float` - Represents a floating-point number, which is a real number with a fractional component 
+| - `double` - Represents a double-precision floating-point number, which has twice the precision of a float 
 
 
 Table from Microsoft Learn about Data Type Ranges.
@@ -389,7 +388,7 @@ Table from Microsoft Learn about Data Type Ranges.
 | double |	8	none	1.7E +/- 308 (15 digits)
 | long double |	same as double	none	Same as double
 | wchar_t |	2	__wchar_t	0 to 65,535
-| ------------ |
+
 If its name begins with two underscores (__), a data type is non-standard.
 
 > [!Warning]
