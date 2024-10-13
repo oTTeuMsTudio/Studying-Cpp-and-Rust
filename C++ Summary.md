@@ -897,4 +897,65 @@ obj.privateFunction(); // Error!
 ```
 
 | This section was written in conjunction with Leo, Brave`s build-in AI. |
-|  |
+| --- |
+
+In C++, access modifiers (also known as access specifiers) are used to control the accessibility of class members (data and functions) from outside the class. There are three main access modifiers:
+
+1. **Public**: Members declared as public can be accessed from anywhere outside the class.
+2. **Private**: Members declared as private can only be accessed within the class itself, and not from outside the class.
+3. **Protected**: Members declared as protected can be accessed within the class itself and by derived classes (i.e., classes that inherit from the current class), but not from outside the class.
+
+**Example**:
+
+```c++
+class MyClass {
+public:
+    int publicMember; // accessible from anywhere
+    void publicFunction() {} // accessible from anywhere
+
+private:
+    int privateMember; // accessible only within MyClass
+    void privateFunction() {} // accessible only within MyClass
+
+protected:
+    int protectedMember; // accessible within MyClass and derived classes
+    void protectedFunction() {} // accessible within MyClass and derived classes
+};
+```
+
+**Friendship**:
+
+In C++, a class can grant access to its private and protected members to another class or function using the `friend` keyword. This allows the friend class or function to access the private and protected members of the original class.
+
+**Example**:
+
+```c++
+class MyClass {
+private:
+    int privateMember;
+
+friend class MyFriendClass; // grant access to MyFriendClass
+
+};
+
+class MyFriendClass {
+public:
+    void accessPrivateMember(MyClass& obj) {
+        obj.privateMember = 10; // access private member of MyClass
+    }
+};
+```
+
+**Best Practices**:
+
+1. Use public members sparingly, as they can be accessed from anywhere.
+2. Use private members extensively, as they are only accessible within the class.
+3. Use protected members to provide a controlled interface to derived classes.
+4. Use friendship judiciously, as it can compromise the encapsulation of a class.
+
+**Additional Resources**:
+
+cppreference.com - Comprehensive documentation on access modifiers and friendship in C++.
+GeeksforGeeks - Article on access modifiers in C++ with examples.
+I hope this helps! Let me know if you have any further questions.
+
