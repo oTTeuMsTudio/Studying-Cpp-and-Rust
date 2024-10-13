@@ -979,12 +979,14 @@ else
 {
     // Code to be executed if the condition and secondCondition is both false
 }
+```
 
 | This section was written in conjunction with Leo, Brave`s build-in AI. |
 | --- |
 
+## C++ If Statement Syntax
 In C++, an if statement is a control flow statement that allows you to execute a block of code only if a specified condition is true. The syntax is as follows:
-
+```C++
 if (condition) {
     // code to execute if condition is true
 }
@@ -992,36 +994,36 @@ if (condition) {
  
 Here, condition is a boolean expression that evaluates to either true or false. If the condition is true, the code inside the curly braces is executed. If the condition is false, the code is skipped.
 
-Example
-
+### Example
+```C++
 int x = 5;
 if (x > 10) {
     std::cout << "x is greater than 10";
 }  // output: nothing, since x is not greater than 10
-
+```
 ### If-Else Statements
 
 An if-else statement allows you to execute different blocks of code depending on whether the condition is true or false. The syntax is as follows:
-
+```C++
 if (condition) {
     // code to execute if condition is true
 } else {
     // code to execute if condition is false
 }
-
+```
 ### Example
-
+```C++
 int x = 5;
 if (x > 10) {
     std::cout << "x is greater than 10";
 } else {
     std::cout << "x is less than or equal to 10";
 }  // output: "x is less than or equal to 10"
-
+```
 ### Nested If Statements
 
 You can nest if statements to create more complex conditional logic. The syntax is as follows:
-
+```C++
 if (outer_condition) {
     if (inner_condition) {
         // code to execute if both conditions are true
@@ -1031,9 +1033,9 @@ if (outer_condition) {
 } else {
     // code to execute if outer_condition is false
 }
-
+```
 ### Example
-
+```C++
 int x = 5;
 int y = 3;
 if (x > 10) {
@@ -1045,11 +1047,12 @@ if (x > 10) {
 } else {
     std::cout << "x is less than or equal to 10";
 }  // output: "x is less than or equal to 10"
+```
 
 ### constexpr If Statements
 
 In C++11 and later, you can use constexpr if statements to evaluate a constant expression at compile-time. The syntax is as follows:
-
+```C++
 constexpr bool is_even(int x) {
     return (x % 2) == 0;
 }
@@ -1061,7 +1064,7 @@ int main() {
         std::cout << "4 is odd";
     }
 }  // output: "4 is even"
-
+```
 Note that constexpr if statements can only be used with constant expressions, and the branch is eliminated at compile-time if the condition is known to be true or false.
 
 ### Best Practices
