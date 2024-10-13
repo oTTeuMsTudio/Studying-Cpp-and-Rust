@@ -829,3 +829,72 @@ shape2->draw(); // Output: Drawing a rectangle.
 These are the basic concepts and features of classes in C++. With classes, you can create reusable and modular code, encapsulate data and behavior, and implement complex systems and algorithms.
 
 
+## Accessibility
+
+| This section was written in conjunction with ChatGPT. |
+| --- |
+
+| Keyword |	Access ability |	Description |
+| --- | --- | --- |
+| `public` | All | Members and functions are accessible from anywhere, including outside the class. |
+| `protected` | 	Subclasses | 	Members and functions are accessible from within the class and any subclasses, but not from outside. |
+| `private` | 	Class | 	Members and functions are only accessible from within the class itself.
+| `mutable` |	Class | Specifies that a member variable can be modified even if the owning object is const.
+| `friend` | Class | Allows a non-member function or class to access the private and protected members of a class.
+
+```c++
+class MyClass
+{
+public:
+    int publicVar; // Public member variable
+
+    // Public member function
+    void publicFunction()
+    {
+        // ...
+    }
+
+protected:
+    int protectedVar; // Protected member variable
+
+    // Protected member function
+    void protectedFunction()
+    {
+        // ...
+    }
+
+private:
+    int privateVar; // Private member variable
+
+    // Private member function
+    void privateFunction()
+    {
+        // ...
+    }
+
+    mutable int mutableVar; // Mutable member variable
+
+    friend void friendFunction(MyClass& obj); // Friend function declaration
+};
+
+void friendFunction(MyClass& obj)
+{
+    obj.privateVar = 42; // Friend function can access private member variable
+}
+
+MyClass obj;
+
+// Accessing public members
+obj.publicVar = 10; // Compiled!
+obj.publicFunction(); // Compiled!
+
+// Accessing private members via friend function
+friendFunction(obj); // Compiled!
+
+// Accessing private members directly (only possible within the class)
+obj.privateVar = 20; // Error!
+obj.privateFunction(); // Error!
+```
+
+| This section was written in conjunction with Leo, Brave`s build-in AI. |
+| --- |
