@@ -897,4 +897,4 @@ obj.privateFunction(); // Error!
 ```
 
 | This section was written in conjunction with Leo, Brave`s build-in AI. |
-| --- |
+|  |
