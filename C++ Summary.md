@@ -1075,3 +1075,16 @@ Use constexpr if statements when possible to optimize your code.
 Test your code thoroughly to ensure correct behavior.
 I hope this helps! Let me know if you have any further questions.
 
+## 🔣 Comparisons and Boolean Operators
+This section was NOT written in conjunction with ChatGPT.
+Here are some operations for creating conditions:
+
+== - Equality check
+!= - Inequality check
+> - Check for greater
+< - Check for less
+>= - Check for greater or equal
+<= - Check for less or equal
+&& - Expression A && B is evaluated by first evaluating A. A has value 0, then A && B also has value 0, and B is not evaluated. Otherwise, B is evaluated; if B has value 0, then A && B has the same value 0, and otherwise has value 1. Also called AND operator.
+|| - Expression A || B is evaluated by first evaluating A. If A has a nonzero value, then A || B has value 1, and B is not evaluated. Otherwise, A || B has value 1 if B is nonzero and value 0 if B is zero. Also called OR operator.
+! - Expression !A is 0 if A is nonzero, and is 1 if A is 0. Also called NOT operator.
