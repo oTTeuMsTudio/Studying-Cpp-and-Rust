@@ -10,7 +10,7 @@ There is little value in rehashing the excellent Rust Getting Started Guide: htt
 
 Good luck!
 
-Adding some tooling
+## Adding some tooling
 Once Rust is installed, we'll be adding the Clippy lint tool. You'll be seeing a lot of Clippy later. Open a terminal window and perform these steps:
 
 rustup component add clippy
