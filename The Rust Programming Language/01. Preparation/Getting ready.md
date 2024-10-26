@@ -1,9 +1,11 @@
-Getting ready
-Before we can do anything useful, we need to set up the Rust development environment. This chapter describes the steps required to install the Rust build toolchain and to install one of these development environments:
+# Getting ready
 
-JetBrains RustRover (https://www.jetbrains.com/rust/)
-Visual Studio Code with the RustAnalyzer extension. (https://code.visualstudio.com)
-Installing Rust
+Before we can do anything useful, we need to set up the Rust development environment. This chapter describes the steps required to install the Rust build toolchain and to install one of these development environments:
+- JetBrains RustRover (https://www.jetbrains.com/rust/)
+- Visual Studio Code with the RustAnalyzer extension. (https://code.visualstudio.com)
+
+## Installing Rust
+
 There is little value in rehashing the excellent Rust Getting Started Guide: https://www.rust-lang.org/learn/get-started. Please follow the steps on this page to install Rust on your development machine. Return here when you can successfully run: cargo --version.
 
 Good luck!
