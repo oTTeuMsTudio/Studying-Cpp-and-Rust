@@ -1,7 +1,7 @@
-Exercise: Capturing age as a number in Rust Systems Programming
+# Exercise: Capturing age as a number in Rust Systems Programming
 Consider the range of numbers these data types can hold and choose what would be the best fit.
 
-Solution:
+# Solution:
 Choosing the Right Numeric Data Type
 
 Let's analyze the potential range of human ages:
