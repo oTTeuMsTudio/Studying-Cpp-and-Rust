@@ -1,0 +1,1 @@
+So far we've used the read_string() function to capture some input from the user. This has been quite useful so far, but sometimes you need a data type other than text. For example, if you want to work with numbers. In this chapter, we'll look at how to convert the user's text-based input into a number. We'll also cover the basics of error handling.
