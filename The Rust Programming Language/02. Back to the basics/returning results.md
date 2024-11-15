@@ -4,7 +4,7 @@ Rewrite the error message to a more generic "You've entered an invalid number. P
 Now that we are returning a more generic error message, we can use the read_number() function to request more numbers than just age, and print the same error if needed.
 
 Since we are returning the error message from the read_number() function, we can now also distinguish between an invalid input and no input.
-
+```rust
 use std::str::FromStr;
 
 fn main() {
@@ -32,7 +32,7 @@ fn read_number() -> Result<u8, String> {
         u8::from_str(&input).or(Err("You've entered an invalid number".to_string()))
     }
 }
-
+```
 We test input.is_empty() to check if the user did not enter any data. We use this in an if block to differentiate between no input and some input.
 
 Notice the lack of ; in the last five lines. This ensures that the result of the if block is returned by the read_number() function.
